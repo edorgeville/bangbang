@@ -7,7 +7,7 @@ bangbang
 4. Press Q when you're done
 5. Take the content of new.json and copy it into data.json in the bPlayer/data/data.json file
 
-## Utilisation de l'enrgesitreur
+## Utilisation de l'enregistreur
 1. Ouvrez bRecorder
 2. Appuyez une fois sur Espace pour commencer l'enregistrement
 3. Appuyez sur Espace à chaque fois que vous souhaitez enregistrer un bang
