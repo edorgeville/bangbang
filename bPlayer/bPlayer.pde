@@ -28,7 +28,7 @@ color yellow = color(255, 220, 0);
 color black = color(0);
 
 void setup() {
-    size(960, 540);
+    size(displayWidth, displayHeight);
 
     Ani.init(this);
 
@@ -54,4 +54,8 @@ void draw() {
     this.dots.draw();
     // fill(white);
     // text(frameRate, 50, 50);
+}
+
+boolean sketchFullScreen(){
+    return true;
 }
