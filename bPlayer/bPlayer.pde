@@ -52,6 +52,6 @@ void draw() {
     if (this.data.doIPlay(_time, "ding"))
         this.dots.ding();
     this.dots.draw();
-    fill(white);
-    text(frameRate, 50, 50);
+    // fill(white);
+    // text(frameRate, 50, 50);
 }
