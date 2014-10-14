@@ -8,6 +8,8 @@ class JSONReader {
     JSONArray bams;
     int dongsCount = 0;
     JSONArray dongs;
+    int dingsCount = 0;
+    JSONArray dings;
 
 
     JSONReader(String file) {
@@ -15,6 +17,7 @@ class JSONReader {
         this.bangs = this.json.getJSONArray("bangs");
         this.bams = this.json.getJSONArray("bams");
         this.dongs = this.json.getJSONArray("dongs");
+        this.dings = this.json.getJSONArray("dings");
     }
 
     boolean doIPlay(int _time, String type){
@@ -36,6 +39,13 @@ class JSONReader {
             if(dongsCount < this.dongs.size()){
                 if (this.dongs.getInt(dongsCount) < _time){
                     this.dongsCount++;
+                    return true;
+                }
+            }
+        }else if(type == "ding"){
+            if(dingsCount < this.dings.size()){
+                if (this.dings.getInt(dingsCount) < _time){
+                    this.dingsCount++;
                     return true;
                 }
             }
