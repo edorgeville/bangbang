@@ -8,7 +8,7 @@ class Player {
     int startedAt;
     boolean started;
 
-    Player(String media, bangplayer those) {
+    Player(String media, bPlayer those) {
         this.minim = new Minim(those);
         this.player = this.minim.loadFile(media, 2048);
         this.started = false;
