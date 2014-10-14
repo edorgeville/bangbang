@@ -6,8 +6,12 @@
 * Description here
 */
 
+import codeanticode.syphon.*;
+
 import de.looksgood.ani.*;
 import de.looksgood.ani.easing.*;
+
+SFD send;
 
 static int BPM = 112;
 static float BPMTOMS = round(1000.0/(BPM/60.0));
@@ -28,7 +32,7 @@ color yellow = color(255, 220, 0);
 color black = color(0);
 
 void setup() {
-    size(displayWidth, displayHeight);
+    size(displayWidth, displayHeight, P3D);
 
     Ani.init(this);
 
@@ -37,6 +41,8 @@ void setup() {
     ellipseMode(CENTER);
     this.player = new Player("data/dexter.mp3", this);
     this.player.start();
+
+    send = new SFD(this);
 }
 
 void draw() {
@@ -54,8 +60,10 @@ void draw() {
     this.dots.draw();
     // fill(white);
     // text(frameRate, 50, 50);
+    send.update();
 }
 
 boolean sketchFullScreen(){
-    return true;
+    // return true;
+    return false;
 }
