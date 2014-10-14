@@ -43,37 +43,15 @@ void draw() {
     background(0);
     noStroke();
     this._time = this.player.timeElapsed();
-    // println("_time: "+_time);
     if (this.data.doIPlay(_time, "bang"))
-        bang();
+        this.dots.bang();
     if (this.data.doIPlay(_time, "bam"))
-        bam();
+        this.dots.bam();
     if (this.data.doIPlay(_time, "dong"))
-        dong();
+        this.dots.dong();
     if (this.data.doIPlay(_time, "ding"))
-        ding();
+        this.dots.ding();
     this.dots.draw();
     fill(white);
     text(frameRate, 50, 50);
-}
-
-void bang(){
-    this.dots.bang();
-    // ellipse(width/2, height/2, width/4, height/4);
-}
-
-void bam(){
-    this.dots.bam();
-}
-
-void dong(){
-    this.dots.dong();
-}
-
-void ding(){
-    this.dots.ding();
-}
-
-boolean fullscreen(){
-    return true;
 }

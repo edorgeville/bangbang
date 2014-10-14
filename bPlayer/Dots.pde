@@ -8,12 +8,7 @@ class Dots {
 
     void draw(){
         for(int i = 0; i < this.dots.size(); i++){
-            // if(this.dots.get(i).isToDestroy()){
-            //     this.dots.remove(i);
-            // }
-            // else{
-                this.dots.get(i).draw();
-            // }
+            this.dots.get(i).draw();
         }
         for(int i = 0; i < this.dots.size(); i++){
             if(this.dots.get(i).isToDestroy()){
