@@ -1,5 +1,8 @@
 bangbang
 ========
+
+![bangbang](https://raw.githubusercontent.com/th3m4ri0/bangbang/master/src/shot.png)
+
 ## Usage of the recorder
 1. Open bRecorder
 2. Press space once to start the record
